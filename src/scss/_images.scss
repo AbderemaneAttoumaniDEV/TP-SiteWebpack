@@ -1,0 +1,42 @@
+body div.primary-background {
+    padding: 3rem;
+    position: relative; /* Le conteneur sert de référence pour le bouton positionné */
+    width: 100%; /* La largeur de l'image peut être ajustée */
+    max-width: 88.5%;
+    margin: 0 auto; /* Centrer le conteneur */
+    overflow: hidden; /* Cache tout ce qui dépasse du conteneur */ 
+}
+
+.navbar-center img {
+    padding-bottom: 1.5rem;
+}
+
+body div.primary-background img {
+    align-items: center;
+    width: 100%; /* L'image occupe 100% de la largeur du conteneur */
+    height: 42rem;
+    object-fit: cover; /* Rognage de l'image pour qu'elle remplisse le conteneur sans déformation */ 
+}
+
+div.image-contain1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contain01 {
+    text-align: center; /* Centre le texte */
+}
+
+.contain01 img {
+    width: 100%;
+    max-width: 48rem; /* L'image prend toute la largeur du div */
+    height: auto; /* Garde les proportions de l'image */
+    object-fit: cover;
+}
+
+.fp-nav img {
+    height: 100%;
+    width: 4rem;
+    object-fit: cover;
+}

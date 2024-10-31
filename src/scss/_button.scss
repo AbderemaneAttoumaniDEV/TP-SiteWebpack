@@ -1,0 +1,36 @@
+@use 'token';
+
+@mixin def-button {
+  height: 2.8rem;
+  width: auto;
+  position: absolute;
+}
+
+button.btn-overlay {
+  @include def-button;
+  top: 65%; /* Centre verticalement le bouton */
+  left: 68.3%; /* Centre horizontalement le bouton */
+  transform: translate(-50%, -50%); /* Centre exactement le bouton */
+  padding: 10px 20px; /* Taille du bouton */
+  font-size: 1.2rem; /* Taille du texte du bouton */
+  background-color: token.$clr_black; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  border: none; /* Retire les bordures */
+  cursor: pointer; /* Curseur en forme de main quand on passe sur le bouton */
+  transition: background-color 0.3s ease; /* Effet de transition sur le survol */
+  }
+  
+button.btn-overlay:hover {
+  background-color: #414141; /* Couleur du bouton au survol */
+  }
+
+
+div.contain01{
+  display: flex;
+  align-items: center;
+}
+
+button.btn-overlay01 {
+  @include def-button();
+  margin-left: 3%;
+}

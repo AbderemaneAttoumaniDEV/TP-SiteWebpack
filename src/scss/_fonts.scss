@@ -1,0 +1,88 @@
+@use 'token';
+
+@font-face {
+    font-family: 'font-title'; /* Le nom que tu donneras à la police */
+    src: url('../assets/fonts/futura_medium_bt-webfont.woff') format('woff2'); /* Chemin du fichier woff2 */
+    font-weight: bold; /* Tu peux spécifier si c'est en gras ou non */
+    font-style: normal;  /* Ou italique */
+}
+
+@font-face {
+    font-family: 'font-subtitle'; /* Le nom que tu donneras à la police */
+    src: url('../assets/fonts/futura_book_font-webfont.woff') format('woff2'); /* Chemin du fichier woff2 */
+    font-weight: none; /* Tu peux spécifier si c'est en gras ou non */
+    font-style: normal;  /* Ou italique */
+}
+
+@font-face {
+    font-family: 'font-button'; /* Le nom que tu donneras à la police */
+    src: url('../assets/fonts/futura_medium_bt-webfont.woff') format('woff2'); /* Chemin du fichier woff2 */
+    font-weight: none; /* Tu peux spécifier si c'est en gras ou non */
+    font-style: normal;  /* Ou italique */
+}
+
+@font-face {
+    font-family: 'font-week'; /* Le nom que tu donneras à la police */
+    src: url('../assets/fonts/sofia-pro-light-webfont.woff') format('woff2'); /* Chemin du fichier woff2 */
+    font-weight: none; /* Tu peux spécifier si c'est en gras ou non */
+    font-style: normal;  /* Ou italique */
+}
+
+@font-face {
+    font-family: 'font-staytitle'; /* Le nom que tu donneras à la police */
+    src: url('../assets/fonts/nimbusromno9l-regita-webfont.woff2') format('woff2'); /* Chemin du fichier woff2 */
+    font-weight: bold; /* Tu peux spécifier si c'est en gras ou non */
+    font-style: oblique;  /* Ou italique */
+}
+
+body {
+    font-family: 'font-subtitle', sans-serif;
+}
+
+button {
+    font-family: 'font-button', sans-serif;
+  }
+
+.text-overlay01 {
+    color: token.$clr_black; /* Couleur du texte */
+    font-family: 'font-title', sans-serif;
+    font-size: 1.55rem; /* Taille du texte */
+}
+
+.text-overlay012 {
+    color: token.$clr_black; /* Couleur du texte */
+    font-family: 'font-subtitle', sans-serif;
+    font-size: 1.2rem; /* Taille du texte */
+}
+
+.onsale {
+    color: token.$clr_white; /* Couleur du texte */
+    font-family: 'font-subtitle', sans-serif;
+    font-size: 1.2rem; /* Taille du texte */
+}
+
+.sale20 {
+    color: token.$clr_white; /* Couleur du texte */
+    font-family: 'font-subtitle', sans-serif;
+    font-size: 1.1rem; /* Taille du texte */
+}
+
+.fp-title {
+    padding: 1rem;
+    font-family: 'font-title', sans-serif;
+}
+
+.fp-navbar {
+    padding: 1rem;
+    font-family: 'font-title', sans-serif;
+}
+
+.twtitle {
+    font-family: 'font-week', sans-serif;
+    color: token.$clr_black;
+}
+
+.staytitle {
+    font-family: 'font-staytitle', sans-serif;
+    font-size: 2rem;
+}
